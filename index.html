@@ -1,0 +1,3450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- When you deploy your site, replace this with your actual URL -->
+    <link rel="canonical" href="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Dr. J S Saleema - Associate Professor & Researcher</title>
+    <meta name="description" content="Dr. J S Saleema, PhD - Associate Professor and Head, Department of Statistics and Data Science at CHRIST University. Specialist in Data Mining, Machine Learning, and Business Intelligence.">
+    <meta name="keywords" content="J S Saleema, Dr Saleema, CHRIST University, Data Science, Machine Learning, Statistics, Data Mining, Business Intelligence">
+    <meta name="author" content="Dr. J S Saleema">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Dr. J S Saleema - Academic Portfolio">
+    <meta property="og:description" content="Dr. J S Saleema, PhD - Associate Professor and Head, Department of Statistics and Data Science at CHRIST University. Specialist in Data Mining, Machine Learning, and Business Intelligence.">
+    <meta property="og:type" content="website">
+    <!-- Add your website URL when you deploy it -->
+    <meta property="og:url" content="">
+    <!-- Add your profile image URL when you deploy it -->
+    <meta property="og:image" content="profile_photo.jpg">
+    <link rel="icon" type="image/jpeg" href="profile_photo.jpg">
+    <style>
+        .more-about-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5em;
+            background: var(--blue-highlight, #eaf2fb);
+            color: var(--accent-color);
+            border: 1.5px solid var(--border-color);
+            border-radius: 2em;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.55em 1.5em;
+            text-decoration: none;
+            box-shadow: 0 2px 8px 0 rgba(64,120,192,0.07);
+            transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+            cursor: pointer;
+        }
+        .more-about-btn:hover {
+            background: rgba(64,120,192,0.13);
+            color: #1e5ab6;
+            box-shadow: 0 4px 16px 0 rgba(64,120,192,0.13);
+        }
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --accent-color: #666666;
+            --accent-rgb: 102, 102, 102; /* RGB value of #666666 */
+            --border-color: rgba(0, 0, 0, 0.20); /* Black border color with 50% opacity */
+            --hover-linkedin: #0077b5;
+            --hover-github: #333333;
+            --hover-gmail: #ea4335;
+            --hover-email: #ea4335;
+            --hover-university: #0056b3;
+            --hover-leetcode: #f89f1b;
+            --card-bg: #ffffff;
+            --card-bg-rgb: 255, 255, 255; /* RGB value of #ffffff */
+            --theme-toggle-bg: #e7e5e5;
+            --theme-toggle-color: #333333;
+            --completed-color: #4CAF50;
+            --ongoing-color: #FF9800;
+            --bg-color-rgb: 255, 255, 255;
+            --blue-highlight: rgba(64, 120, 192, 0.15);
+            --blue-highlight-rgb: 64, 120, 192;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --accent-color: #cccccc;
+            --accent-rgb: 204, 204, 204; /* RGB value of #cccccc */
+            --border-color: rgba(255, 255, 255, 0.20); /* 50% opacity white border color for dark mode */
+            --card-bg: #1e1e1e;
+            --card-bg-rgb: 30, 30, 30; /* RGB value of #1e1e1e */
+            --theme-toggle-bg: #1e1e1e;
+            --theme-toggle-color: #f0f0f0;
+            --hover-github: #cccccc;
+            --dark-hover-github: #ffffff;
+            --bg-color-rgb: 18, 18, 18;
+            --blue-highlight: rgba(64, 120, 192, 0.2);
+            --secondary-text: rgba(255, 255, 255, 0.7); /* Light gray for secondary text in dark mode */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        .header-left {
+            flex: 1;
+            margin-right: 2rem;
+        }
+
+        .header-right {
+            flex-shrink: 0;
+        }
+
+        .header-left h1 {
+            margin-bottom: 0.2rem;
+            letter-spacing: -0.5px;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        /* Adjusting spacing and color for AI Engineer subtitle */
+        .header-left pre {
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 1rem;
+            color: gray;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            word-wrap: break-word;
+
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .social-links a {
+            color: var(--accent-color);
+            font-size: 1.0rem;
+            transition: all 0.3s ease;
+            background-color: var(--card-bg);
+            padding: 0.3rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.0rem;
+            height: 2.0rem;
+            text-decoration: none;
+            position: relative;
+        }
+
+        /* Global tooltip style for all links */
+        a[title]:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.65rem;
+            background-color: var(--card-bg);
+            padding: 3px 6px;
+            border-radius: 3px;
+            border: 1px solid var(--border-color);
+            opacity: 1;
+            white-space: nowrap;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+        }
+
+        a[title] {
+            position: relative;
+        }
+
+        /* Social links specific tooltip style */
+        .social-links a::after {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.65rem;
+            background-color: var(--card-bg);
+            padding: 3px 6px;
+            border-radius: 3px;
+            border: 1px solid var(--border-color);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            pointer-events: none;
+            white-space: nowrap;
+            z-index: 10;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links a:hover::after {
+            opacity: 1;
+        }
+
+        .social-links a.linkedin::after {
+            content: "LinkedIn";
+        }
+
+        .social-links a.github::after {
+            content: "GitHub";
+        }
+
+        .social-links a.gmail::after {
+            content: "Email";
+        }
+
+        .social-links a.email::after {
+            content: "Email";
+        }
+
+        .social-links a.university::after {
+            content: "University Profile";
+        }
+
+        .social-links a.leetcode::after {
+            content: "LeetCode";
+        }
+
+        .social-links a.resume::after {
+            content: "Resume";
+        }
+
+        .social-links a {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                        0 0 6px rgba(64, 120, 192, 0.2),
+                        0 0 10px rgba(64, 120, 192, 0.1);
+        }
+
+        .social-links a.linkedin:hover {
+            color: var(--hover-linkedin);
+        }
+
+        .social-links a.github:hover {
+            color: var(--dark-hover-github);
+        }
+
+        .social-links a.gmail:hover {
+            color: var(--hover-gmail);
+        }
+
+        .social-links a.email:hover {
+            color: var(--hover-email);
+        }
+
+        .social-links a.university:hover {
+            color: var(--hover-university);
+        }
+
+        .social-links a.leetcode:hover {
+            color: var(--hover-leetcode);
+        }
+
+        .social-links a.resume:hover {
+            color: var(--dark-hover-github);
+        }
+
+
+
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid #1e5ab6;
+            background: #1e5ab6;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .profile-photo:hover {
+            transform: scale(1.18);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+            /* No blur or filter, keep image sharp */
+        }
+
+        /* Better responsive profile photo */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .profile-photo {
+                width: 85px;
+                height: 90px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-photo {
+                width: 80px;
+                height: 84px;
+                margin-top: 0.5rem;
+            }
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 0.5rem;
+            right: 0.5rem;
+            padding: 0.4rem;
+            background-color: var(--theme-toggle-bg);
+            color: var(--theme-toggle-color);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+        }
+
+        /* Comprehensive Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            /* Keep header horizontal layout on all screen sizes */
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: row;
+            }
+            
+            .header-left {
+                flex: 1;
+                margin-right: 1.5rem;
+                text-align: left;
+            }
+            
+            .header-right {
+                flex-shrink: 0;
+            }
+            
+            .profile-photo {
+                width: 80px;
+                height: 84px;
+            }
+            
+            .social-links {
+                justify-content: flex-start;
+                margin-top: 0.5rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            /* Keep header horizontal even on mobile */
+            .header-left {
+                margin-right: 1rem;
+            }
+            
+            .profile-photo {
+                width: 70px;
+                height: 74px;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .publication-card {
+                padding: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0.8rem;
+            }
+            
+            /* Keep header horizontal layout even on very small screens */
+            .header-left {
+                margin-right: 0.8rem;
+            }
+            
+            .header-left h1 {
+                font-size: 1.2rem;
+            }
+            
+            .header-left pre {
+                font-size: 0.85rem;
+            }
+            
+            .profile-photo {
+                width: 60px;
+                height: 63px;
+            }
+            
+            .social-links a {
+                font-size: 1rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                margin-right: 0.3rem;
+            }
+            
+            .tag-container {
+                flex-wrap: wrap;
+            }
+            
+            .tag {
+                margin-bottom: 0.3rem;
+                font-size: 0.65rem;
+            }
+            
+            .project-card {
+                padding: 1rem;
+            }
+        }
+
+        @media print {
+            .theme-toggle {
+                display: none;
+            }
+
+            :root {
+                --bg-color: #ffffff;
+                --text-color: #000000;
+                --accent-color: #666666;
+                --border-color: #000000;
+                --card-bg: #fdfdfd;
+            }
+
+            body {
+                background-color: var(--bg-color);
+                color: var(--text-color);
+            }
+
+            [data-theme="dark"] {
+                --bg-color: #ffffff;
+                --text-color: #000000;
+                --accent-color: #666666;
+                --border-color: #ffffff;
+                --card-bg: #fdfdfd;
+            }
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+
+        section h2 {
+            margin-bottom: 0.3rem;
+            position: relative;
+            display: inline-block;
+            font-size: 1.1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        section h2:after {
+            display: none;
+        }
+
+        .about-me {
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+            width: 100%;
+        }
+
+        .about-me p {
+            max-width: 100%;
+            color: #555555;
+            font-size: 0.8rem;
+            font-weight: 200;
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+        }
+
+        [data-theme="dark"] .about-me p {
+            color: #aaaaaa;
+        }
+        
+        .code-block {
+            position: relative;
+            background-color: rgba(240, 240, 240, 0.3);
+            border-radius: 6px;
+            padding: 1rem;
+            border-left: 3px solid #aaaaaa;
+        }
+        
+        [data-theme="dark"] .code-block {
+            background-color: rgba(30, 30, 30, 0.3);
+            border-left: 3px solid #666666;
+        }
+        
+        .code-line {
+            color: #888888;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        [data-theme="dark"] .code-line {
+            color: #777777;
+        }
+
+        /* Skills section - Terminal-inspired techy design */
+        .skills-terminal {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.75rem;
+            line-height: 1.8;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .terminal-line {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .terminal-command {
+            color: var(--text-color);
+            font-weight: 600;
+            font-size: 0.85rem;
+            min-width: 90px;
+            flex-shrink: 0;
+        }
+
+        .terminal-output {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            align-items: center;
+        }
+
+        .skill-tag {
+            background-color: rgba(var(--accent-rgb), 0.1);
+            color: var(--text-color);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            border: 1px solid rgba(var(--accent-rgb), 0.2);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+            user-select: none;
+        }
+
+        .skill-tag:hover {
+            background-color: rgba(var(--accent-rgb), 0.2);
+            border-color: rgba(var(--accent-rgb), 0.4);
+            transform: translateY(-1px);
+        }
+
+        .skill-tag:active {
+            transform: translateY(0) scale(0.96);
+        }
+
+        /* Dark theme adjustments */
+        [data-theme="dark"] .skill-tag {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        [data-theme="dark"] .skill-tag:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .terminal-line {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.4rem;
+                margin-bottom: 0.6rem;
+            }
+            
+            .terminal-command {
+                font-size: 0.8rem;
+                min-width: auto;
+            }
+            
+            .terminal-output {
+                padding-left: 0;
+                width: 100%;
+            }
+            
+            .skills-terminal {
+                font-size: 0.7rem;
+            }
+            
+            .skill-tag {
+                font-size: 0.65rem;
+                padding: 0.1rem 0.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .terminal-command {
+                font-size: 0.75rem;
+            }
+            
+            .skill-tag {
+                font-size: 0.6rem;
+                padding: 0.08rem 0.25rem;
+            }
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-card {
+            background-color: transparent;
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            background-color: rgba(var(--card-bg-rgb), 0.05);
+            border-color: var(--border-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05),
+                        0 0 8px rgba(64, 120, 192, 0.15),
+                        0 0 15px rgba(64, 120, 192, 0.08);
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.15rem;
+            font-weight: bold;
+            font-size: 0.85rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .project-card p {
+            margin-bottom: 0.3rem;
+            font-size: 0.75rem;
+            color: var(--secondary-text, #666666);
+        }
+        
+        .coming-soon-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: rgba(255, 152, 0, 0.15);
+            color: #FF9800;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-top: 5px;
+            border: 1px solid rgba(255, 152, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        .project-card.coming-soon {
+            border: 1px solid rgba(255, 152, 0, 0.3);
+            box-shadow: 0 2px 8px rgba(255, 152, 0, 0.1);
+        }
+        
+        .project-card.coming-soon:hover {
+            border-color: rgba(255, 152, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05),
+                        0 0 10px rgba(255, 152, 0, 0.2),
+                        0 0 20px rgba(255, 152, 0, 0.1);
+        }
+
+        /* In Progress project styling */
+        .in-progress-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: rgba(255, 193, 7, 0.15);
+            color: #FFC107;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-top: 5px;
+            border: 1px solid rgba(255, 193, 7, 0.3);
+        }
+        
+        .in-progress-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #FFC107;
+            border-radius: 50%;
+            animation: blink-progress 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes blink-progress {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.4;
+                transform: scale(0.8);
+            }
+        }
+        
+        .project-card.in-progress {
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            box-shadow: 0 2px 8px rgba(255, 193, 7, 0.1);
+        }
+        
+        .project-card.in-progress:hover {
+            border-color: rgba(255, 193, 7, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05),
+                        0 0 10px rgba(255, 193, 7, 0.2),
+                        0 0 20px rgba(255, 193, 7, 0.1);
+        }
+
+        .project-link {
+            color: var(--accent-color);
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            margin-right: 0.8rem;
+            text-decoration: none;
+        }
+
+        .project-link:hover {
+            color: var(--dark-hover-github);
+        }
+
+        .see-more {
+            color: var(--accent-color);
+            background-color: transparent;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-left: 5px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .see-more:hover {
+            color: var(--dark-hover-github);
+            background-color: rgba(var(--accent-rgb), 0.2);
+            transform: translateY(-1px);
+        }
+
+        .project-details {
+            border-top: 1px solid var(--border-color);
+            padding-top: 8px;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease, padding-top 0.3s ease;
+            font-size: 0.75rem;
+            color: #666666;
+        }
+
+        .project-details[style*="display: block"] {
+            max-height: 200px;
+            opacity: 1;
+            padding-top: 8px;
+        }
+
+        .publications .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            margin-bottom: 0.8rem;
+        }
+        
+        .publication-container {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+        
+        .publication-container:last-child {
+            margin-bottom: 0;
+        }
+        
+        .publication-card {
+            background-color: transparent;
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+            position: relative;
+            min-height: 120px;
+            width: 100%;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-2px);
+            background-color: rgba(var(--card-bg-rgb), 0.05);
+            border-color: var(--border-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05),
+                        0 0 8px rgba(64, 120, 192, 0.15),
+                        0 0 15px rgba(64, 120, 192, 0.08);
+        }
+
+        .publication-title {
+            margin-bottom: 0.8rem;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: var(--text-color);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .publication-links {
+            margin-top: 0.8rem;
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .publication-link {
+            color: var(--accent-color);
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .publication-link:hover {
+            color: var(--dark-hover-github);
+        }
+
+        /* Conference info now included in title */
+        
+        .publication-description {
+            font-size: 0.75rem;
+            color: var(--secondary-text, #666666);
+            margin-bottom: 2.5rem;
+            line-height: 1.4;
+        }
+        
+        .publication-links {
+            position: absolute;
+            bottom: 0.8rem;
+            right: 0.8rem;
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 0.8rem;
+            justify-content: flex-end;
+        }
+
+        .experience-item {
+            width: 100%;
+            margin-bottom: 0.8rem;
+            background-color: transparent;
+            padding: 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .experience-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--border-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05),
+                        0 0 8px rgba(64, 120, 192, 0.15),
+                        0 0 15px rgba(64, 120, 192, 0.08);
+        }
+        
+        /* Highlight current/present position */
+        .experience-item.current {
+            border: 1px solid rgba(var(--blue-highlight-rgb), 0.3);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-item.current::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(var(--blue-highlight-rgb), 0.6), 
+                transparent);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                left: 100%;
+                opacity: 0;
+            }
+        }
+        
+        .experience-item.current:hover {
+            transform: translateY(-2px);
+            border-color: rgba(var(--blue-highlight-rgb), 0.4);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05),
+                        0 0 8px rgba(64, 120, 192, 0.15),
+                        0 0 15px rgba(64, 120, 192, 0.08);
+        }
+        
+        .current-dot {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #22c55e;
+            border-radius: 50%;
+            margin-left: 6px;
+            vertical-align: middle;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.7;
+                transform: scale(1.1);
+            }
+        }
+        
+        .company-logo {
+            width: 35px;
+            height: 35px;
+            border-radius: 4px;
+            margin-right: 0.8rem;
+            object-fit: contain;
+            align-self: flex-start;
+            flex-shrink: 0;
+        }
+        
+        /* Special styling for PwC logo - square styling */
+        .company-logo[alt="PwC Logo"] {
+            width: 35px;
+            height: 35px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+        
+        /* Ensure logo visibility across all screen sizes */
+        @media (max-width: 480px) {
+            .company-logo {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
+        .experience-content {
+            flex: 1;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-title {
+            margin-bottom: 0.15rem;
+            font-weight: bold;
+            font-size: 0.85rem;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .company-link {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .company-link:hover {
+            color: var(--accent-color);
+        }
+
+        .experience-company {
+            margin-bottom: 0.15rem;
+            font-size: 0.75rem;
+            color: var(--secondary-text, #666666);
+        }
+
+        .experience-duration {
+            font-weight: 500;
+            color: var(--accent-color);
+            float: right;
+            font-size: 0.75rem;
+            white-space: nowrap;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        /* Responsive adjustments to maintain uniform appearance */
+        @media (max-width: 480px) {
+            .experience-title {
+                font-size: 0.8rem;
+                margin-right: 0.5rem;
+            }
+        }
+
+        .experience-description {
+            font-size: 0.75rem;
+            color: var(--secondary-text, #666666);
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .experience-description ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .experience-description li {
+            margin-bottom: 0.25rem;
+        }
+
+
+
+        .contribution-links {
+            margin-top: 0.5rem;
+        }
+
+        .repo-name {
+            font-size: 0.75rem;
+            color: #666666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        /* Achievements style */
+        .achievements-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 0.8rem;
+            width: 100%;
+            margin-bottom: 0.8rem;
+        }
+
+        .achievement-badge {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.8rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Equal height for all cards */
+        }
+
+        .achievement-badge:hover {
+            transform: translateY(-2px);
+            background-color: rgba(var(--card-bg-rgb), 0.05);
+            border-color: var(--border-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05),
+                        0 0 8px rgba(64, 120, 192, 0.15),
+                        0 0 15px rgba(64, 120, 192, 0.08);
+        }
+
+        .achievement-icon {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .achievement-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .achievement-title-container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0.2rem;
+            flex: 1;
+        }
+
+        .achievement-title {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: var(--text-color);
+            line-height: 1.3;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .achievement-date {
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .achievement-description {
+            font-size: 0.75rem;
+            color: var(--secondary-text, #666666);
+            line-height: 1.4;
+            margin: 0;
+            margin-top: 0.3rem;
+        }
+        
+        /* Responsive styles for achievements section */
+        @media (max-width: 768px) {
+            .achievements-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .achievement-badge {
+                margin-bottom: 0; /* Remove extra margin since grid handles spacing */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .achievement-title {
+                font-size: 0.8rem;
+            }
+            
+            .achievement-description {
+                font-size: 0.7rem;
+                line-height: 1.5;
+            }
+            
+            .achievement-badge {
+                padding: 0.7rem;
+            }
+        }
+
+        .see-more-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .see-more-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            color: var(--accent-color);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            background-color: var(--card-bg);
+        }
+
+        .see-more-btn:hover {
+            color: var(--dark-hover-github);
+            transform: translateY(-2px);
+        }
+
+        .see-more-icon-btn {
+            background: none;
+            border: none;
+            padding: 0.3rem 0.7rem;
+            color: var(--accent-color);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            border-radius: 6px;
+        }
+
+        .see-more-icon-btn:hover {
+            color: var(--dark-hover-github);
+            background-color: var(--border-color);
+        }
+
+        #additional-projects,
+        #additional-contributions,
+        #additional-experience {
+            animation: fadeIn 0.4s ease-out;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        #additional-experience {
+            margin-top: 0.8rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Data Stream Reveal Animation Styles */
+        .opening-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.8s ease-out;
+            overflow: hidden;
+        }
+        
+        body.animation-active {
+            overflow: hidden;
+        }
+
+        .opening-animation.fade-out {
+            opacity: 0;
+        }
+
+        .animation-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        /* Canvas for neural network background */
+        #data-stream-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.4; /* Increased from 0.3 for better visibility */
+        }
+
+        .name-container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 1;
+        }
+
+        .name-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 6rem;
+            margin-bottom: 1.8rem;
+        }
+        
+        /* Binary Character Styles */
+        .binary-char {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 4.2rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin: 0 2px;
+            position: relative;
+            width: 1em;
+            text-align: center;
+            height: 1.2em;
+            overflow: hidden;
+        }
+        
+        /* Blinking cursor effect for binary typing - only show on the containing element */
+        @keyframes blink {
+            0%, 100% { border-right-color: transparent; }
+            50% { border-right-color: var(--accent-color); }
+        }
+        
+        .binary-char .char-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+        .binary-char.space {
+            opacity: 0;
+        }
+        
+        /* Glitch effect for character transformation */
+        @keyframes glitchEffect {
+            0% { 
+                clip-path: inset(0% 0% 100% 0%);
+                transform: translateX(-2px);
+            }
+            10% { 
+                clip-path: inset(0% 0% 70% 0%);
+                transform: translateX(1px);
+            }
+            20% { 
+                clip-path: inset(0% 0% 40% 0%);
+                transform: translateX(-1px);
+            }
+            30% { 
+                clip-path: inset(0% 0% 10% 0%);
+                transform: translateX(2px);
+            }
+            40% { 
+                clip-path: inset(0% 0% 20% 0%);
+                transform: translateX(0px);
+            }
+            50% { 
+                clip-path: inset(0% 0% 5% 0%);
+                transform: translateX(-1px);
+            }
+            60% { 
+                clip-path: inset(0% 0% 0% 0%);
+                transform: translateX(0px);
+            }
+            100% { 
+                clip-path: inset(0% 0% 0% 0%);
+                transform: translateX(0px);
+            }
+        }
+        
+        /* Fading/morphing effect for binary digits disappearing */
+        @keyframes fadeOutBinary {
+            0% { 
+                opacity: 1;
+                filter: blur(0px);
+                transform: scale(1);
+            }
+            20% { 
+                opacity: 1;
+                filter: blur(1px);
+                transform: scale(1.05);
+            }
+            60% { 
+                opacity: 0.3;
+                filter: blur(2px);
+                transform: scale(0.95);
+            }
+            100% { 
+                opacity: 0;
+                filter: blur(5px);
+                transform: scale(0.9);
+            }
+        }
+        
+        /* Text scramble effect */
+        @keyframes scrambleIn {
+            0% {
+                opacity: 0;
+                transform: translateY(5px);
+                filter: blur(5px);
+                letter-spacing: 2px;
+            }
+            60% {
+                opacity: 0.7;
+                transform: translateY(0);
+                filter: blur(1px);
+                letter-spacing: normal;
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                filter: blur(0);
+                letter-spacing: normal;
+            }
+        }
+        
+        .binary-char .binary {
+            color: var(--accent-color);
+        }
+        
+        .binary-char .letter {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-color);
+            opacity: 0;
+        }
+        
+        .binary-char.transforming .binary {
+            animation: fadeOutBinary 0.6s forwards;
+        }
+        
+        .binary-char.transformed .binary {
+            opacity: 0;
+        }
+        
+        .binary-char.transforming .letter {
+            animation: scrambleIn 0.8s forwards;
+            animation-delay: 0.2s;
+        }
+        
+        .tagline {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            opacity: 0;
+            animation: fadeInData 1.2s ease forwards;
+            animation-delay: calc(500ms + 150ms * var(--char-count) + 1000ms);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        @keyframes fadeInData {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Initial fade-in animation for container */
+        @keyframes containerFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.98);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin: 0.4rem 0;
+        }
+        
+        .tag {
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            font-size: 0.55rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        [data-theme='dark'] .tag {
+            background-color: #333;
+            color: #ccc;
+        }
+
+        /* Cell styling */
+        .cell {
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+        
+        [data-theme="dark"] .cell {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .cell:last-child {
+            border-bottom: none;
+        }
+        
+        .cell-input {
+            padding: 0.5rem 0.75rem;
+            display: flex;
+        }
+        
+        /* Run button styling */
+        .run-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 3px 8px;
+            font-size: 0.65rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .cell:hover .run-button {
+            opacity: 1;
+        }
+        
+        .run-button:hover {
+            background-color: #3b78e7;
+        }
+        
+        .run-button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+        
+        .cell-prompt {
+            color: #9999bb;
+            min-width: 4rem;
+            font-weight: bold;
+            padding-right: 0.5rem;
+        }
+
+        /* Learning Block */
+        #learning {
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        #learning h2 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        #learning h2:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, transparent, rgba(64, 120, 192, 0.6), transparent);
+        }
+
+        #learning p {
+            margin-bottom: 1rem;
+            color: #555555;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        #learning ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        #learning li {
+            margin-bottom: 0.5rem;
+        }
+
+        #learning a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #learning a:hover {
+            color: var(--dark-hover-github);
+        }
+
+        /* About Read More Button */
+        #about-read-more-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(var(--accent-rgb), 0.15);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 500;
+        }
+
+        #about-read-more-btn:hover {
+            background: rgba(var(--accent-rgb), 0.25);
+            border-color: var(--accent-color);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(var(--accent-rgb), 0.2);
+        }
+
+        #about-read-more-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 4px rgba(var(--accent-rgb), 0.2);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Python Notebook styles for apprenticeships section -->
+    <style>
+        /* Jupyter notebook-style container for apprenticeships */
+        .python-notebook-container {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        [data-theme="dark"] .python-notebook-container {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .python-notebook-container:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15), 
+                        0 0 15px rgba(64, 120, 192, 0.25);
+        }
+        
+        /* Notebook header with buttons (similar to Jupyter) */
+        .notebook-header {
+            background-color: rgba(var(--blue-highlight-rgb), 0.1);
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+        
+        [data-theme="dark"] .notebook-header {
+            background-color: rgba(var(--blue-highlight-rgb), 0.05);
+        }
+        
+        .notebook-buttons {
+            display: flex;
+            gap: 8px;
+            margin-right: 15px;
+        }
+        
+        .notebook-button {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .notebook-button.close {
+            background-color: #ff5f56;
+        }
+        
+        .notebook-button.minimize {
+            background-color: #ffbd2e;
+        }
+        
+        .notebook-button.maximize {
+            background-color: #27c93f;
+        }
+        
+        /* Add pseudo-elements for button symbols */
+        .notebook-button.close::before {
+            content: '×';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 10px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .notebook-button.close:hover::before {
+            opacity: 1;
+        }
+        
+        .notebook-title {
+            color: #555;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 0.85rem;
+            flex-grow: 1;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+        
+        [data-theme="dark"] .notebook-title {
+            color: #dcdcdc;
+        }
+        
+        /* Notebook content styles */
+        .notebook-content {
+            padding: 15px 0;
+            font-family: 'JetBrains Mono', monospace, 'Courier New', Courier;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            counter-reset: cell-counter;
+        }
+        
+        /* Cell styling */
+        .cell {
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-left: 5px solid transparent;
+            padding-bottom: 0.75rem;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        
+        .cell:hover {
+            border-color: #e0e0e0;
+            border-left-color: #66bb6a;
+            background-color: rgba(247, 247, 247, 0.7);
+        }
+        
+        [data-theme="dark"] .cell {
+            border-left: 5px solid transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        [data-theme="dark"] .cell:hover {
+            border-color: rgba(255, 255, 255, 0.1);
+            border-left-color: #4CAF50;
+            background-color: rgba(32, 32, 32, 0.7);
+        }
+        
+        .cell:last-child {
+            border-bottom: none;
+        }
+        
+        .cell-input {
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+        }
+        
+        /* Python code styling */
+        .python-code {
+            font-family: 'JetBrains Mono', monospace, 'Courier New', Courier;
+            color: #333;
+            flex: 1;
+            white-space: pre-wrap;
+            line-height: 1.6;
+            max-height: 300px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #ddd transparent;
+            padding-right: 10px;
+        }
+        
+        /* Add scrollbar styling for better UX */
+        .python-code::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .python-code::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        
+        .python-code::-webkit-scrollbar-thumb {
+            background-color: #ddd;
+            border-radius: 20px;
+        }
+        
+        [data-theme="dark"] .python-code::-webkit-scrollbar-thumb {
+            background-color: #555;
+        }
+        
+        [data-theme="dark"] .python-code {
+            color: #e0e0e0;
+            scrollbar-color: #555 transparent;
+        }
+        
+        /* Apply syntax highlighting using spans that will be added via JS */
+        .python-code .keyword { color: #0033cc; font-weight: bold; }
+        .python-code .builtin { color: #0033cc; }
+        .python-code .string { color: #008800; }
+        .python-code .comment { color: #888888; font-style: italic; }
+        .python-code .number { color: #aa22ff; }
+        .python-code .function { color: #900090; font-weight: bold; }
+        .python-code .operator { color: #666666; }
+        .python-code .decorator { color: #aa5500; }
+        
+        [data-theme="dark"] .python-code .keyword { color: #569cd6; font-weight: bold; }
+        [data-theme="dark"] .python-code .builtin { color: #4ec9b0; }
+        [data-theme="dark"] .python-code .string { color: #ce9178; }
+        [data-theme="dark"] .python-code .comment { color: #6a9955; }
+        [data-theme="dark"] .python-code .number { color: #b5cea8; }
+        [data-theme="dark"] .python-code .function { color: #dcdcaa; }
+        [data-theme="dark"] .python-code .operator { color: #d4d4d4; }
+        [data-theme="dark"] .python-code .decorator { color: #c586c0; }
+        
+        /* Run button styling */
+        .run-button {
+            position: absolute;
+            right: 15px;
+            top: 12px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 10px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, background-color 0.2s ease;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .cell:hover .run-button {
+            opacity: 1;
+        }
+        
+        .run-button:hover {
+            background-color: #3b78e7;
+        }
+        
+        .run-button:disabled {
+            background-color: #999;
+            cursor: not-allowed;
+        }
+        
+        .cell-prompt {
+            color: #9999bb;
+            min-width: 4.5rem;
+            font-weight: bold;
+            padding-right: 0.75rem;
+            user-select: none;
+            opacity: 0.9;
+        }
+        
+        [data-theme="dark"] .cell-prompt {
+            color: #7777aa;
+        }
+        
+        /* Output styling */
+        .cell-output {
+            padding: 0.75rem 1rem 0.75rem 6.25rem;
+            background-color: #f8f8f8;
+            border-top: 1px solid #eaeaea;
+            position: relative;
+            transition: all 0.3s ease;
+            font-family: 'JetBrains Mono', monospace, 'Courier New', Courier;
+            font-size: 0.85rem;
+            animation: fadeInOutput 0.5s;
+        }
+        
+        @keyframes fadeInOutput {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        [data-theme="dark"] .cell-output {
+            background-color: #2a2a2a;
+            border-top: 1px solid #333;
+        }
+        
+        .output-text {
+            color: #444;
+            line-height: 1.5;
+        }
+        
+        [data-theme="dark"] .output-text {
+            color: #ddd;
+        }
+        
+        .output-text pre {
+            margin: 0;
+            white-space: pre-wrap;
+            font-family: inherit;
+        }
+        
+        /* Add a "Out" prompt label */
+        .cell-output::before {
+            content: "Out[1]:";
+            position: absolute;
+            left: 1rem;
+            color: #D84315;
+            font-weight: bold;
+            opacity: 0.9;
+        }
+        
+        [data-theme="dark"] .cell-output::before {
+            color: #ff7043;
+        }
+    </style>
+</head>
+<body>
+    <!-- Data Stream Opening Animation -->
+    <div class="opening-animation">
+        <div class="animation-container">
+            <canvas id="data-stream-canvas"></canvas>
+            <div class="name-container">
+                <div class="name-text">J S SALEEMA</div>
+                <div class="tagline">Associate Professor & Data Science Researcher</div>
+            </div>
+        </div>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <h1>Dr. J S Saleema</h1>
+                <pre style="font-family: 'Consolas', 'Monaco', monospace; font-size: 1rem; color: gray; margin-top: -10px;">Associate Professor & Researcher</pre>
+                <div class="social-links">
+                    <a href="https://christuniversity.in/statistics-and-data-science/faculty-details/MTY0/OTEy" class="university" title="University Profile"><i class="fas fa-university"></i></a>
+                    <a href="mailto:Saleema.js@christuniversity.in" class="email"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E164.jpg" alt="Dr. J S Saleema Profile Photo" class="profile-photo" loading="eager" fetchpriority="high">
+            </div>
+        </div>
+
+        <section class="about-me">
+            <h2>About</h2>
+            <div class="code-block">
+                <div class="code-line">// Professional Profile</div>
+                <p>Dr. J S Saleema is an Associate Professor and Head of the Department of Statistics and Data Science at CHRIST (Deemed to be University), Bangalore. With 25 years of rich teaching experience and a PhD in Computer Science specializing in Data Mining and Machine Learning, she is passionate about developing sustainable healthcare analytics systems and fostering continuous learning in the academic community.</p>
+                
+                <div id="about-more-content" style="display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(128, 128, 128, 0.2);">
+                    <p>Her current research explores the neural mechanisms of brain behavior through cognitive neuroscience, investigating the impact of mindfulness on cognitive function and mental well-being.</p>
+                    
+                    <div class="code-line" style="margin-top: 15px;">// Educational Background</div>
+                    <ul style="margin-left: 20px; color: var(--text-color); line-height: 1.8;">
+                        <li>PhD in Computer Science (2018) - Efficient Data Mining Techniques for Medical Data</li>
+                        <li>MPhil in Computer Science (2006) - FP-Trees and Compressed Trees Comparative Study</li>
+                        <li>Master of Computer Applications - MCA (1998)</li>
+                        <li>Bachelor of Science in Mathematics - BSc (1995)</li>
+                    </ul>
+                    
+                    <div class="code-line" style="margin-top: 15px;">// International Experience</div>
+                    <p>Invited as Visiting Faculty at University of Applied Sciences, Würzburg-Schweinfurt, Germany (2018, 2019), where advanced seminars were conducted on data science, machine learning, and business intelligence for international students.</p>
+                    
+                    <div class="code-line" style="margin-top: 15px;">// Research Interests</div>
+                    <p>Data Mining, Machine Learning, Deep Learning, Business Intelligence, Healthcare Analytics, Cognitive Neuroscience, Medical Image Analysis, Cancer Prognosis, Cloud Computing, and Predictive Analytics.</p>
+                </div>
+                
+                <button id="about-read-more-btn" onclick="toggleAboutSection()">
+                    <i class="fas fa-chevron-down"></i> Read More About Me
+                </button>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Research & Technical Expertise</h2>
+            <div class="skills-terminal">
+                <div class="terminal-line">
+                    <span class="terminal-command">Research Specialization:</span>
+                    <span class="terminal-output">
+                        <span class="skill-tag">Data Mining</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Business Intelligence</span>
+                        <span class="skill-tag">Cognitive Neuroscience</span>
+                        <span class="skill-tag">Healthcare Analytics</span>
+                    </span>
+                </div>
+                <div class="terminal-line">
+                    <span class="terminal-command">Technical Skills:</span>
+                    <span class="terminal-output">
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Predictive Analytics</span>
+                        <span class="skill-tag">Statistical Modeling</span>
+                        <span class="skill-tag">Data Science</span>
+                    </span>
+                </div>
+                <div class="terminal-line">
+                    <span class="terminal-command">Applications:</span>
+                    <span class="terminal-output">
+                        <span class="skill-tag">Medical Data Analysis</span>
+                        <span class="skill-tag">Cancer Prognosis</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">Image Processing</span>
+                        <span class="skill-tag">Pattern Recognition</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2>Academic Experience</h2>
+            <!-- Initial experience items -->
+            <div id="initial-experience">
+
+                <!-- Current Position -->
+                <div class="experience-item current">
+                    <img src="https://christuniversity.in/images/logo.png" alt="CHRIST University Logo" class="company-logo" onerror="this.style.display='none'">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Associate Professor & Head of Department</h3>
+                            <span class="experience-duration">2022 - Present<span class="current-dot"></span></span>
+                        </div>
+                        <div class="experience-company">
+                            <a href="https://christuniversity.in" target="_blank" title="Visit CHRIST University" class="company-link">
+                                Department of Statistics and Data Science, CHRIST (Deemed to be University) <i class="fa-solid fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
+                            </a>
+                            <span style="font-size: 0.8rem; opacity: 0.8;">(Bangalore, India)</span>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Leading the department in fostering excellence in statistics, data science, and data analytics education.</li>
+                                <li>Teaching MSc Data Science, MSc Data Analytics, MSc Statistics, and PhD coursework.</li>
+                                <li>Principal Investigator for major research project on skill-demand-gap in data science and machine learning (2019-2023, Grant: Rs. 16,29,000).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CHRIST University - Computer Science -->
+                <div class="experience-item">
+                    <img src="https://christuniversity.in/images/logo.png" alt="CHRIST University Logo" class="company-logo" onerror="this.style.display='none'">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Associate Professor</h3>
+                            <span class="experience-duration">2005 - 2022</span>
+                        </div>
+                        <div class="experience-company">
+                            <a href="https://christuniversity.in" target="_blank" title="Visit CHRIST University" class="company-link">
+                                Department of Computer Science, CHRIST (Deemed to be University) <i class="fa-solid fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
+                            </a>
+                            <span style="font-size: 0.8rem; opacity: 0.8;">(Bangalore, India)</span>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Taught BCA, MCA, MSc Data Science, and PhD coursework for 17 years.</li>
+                                <li>Completed PhD in Computer Science specializing in Data Mining and Machine Learning (2018).</li>
+                                <li>Visiting faculty at University of Applied Sciences, Würzburg-Schweinfurt, Germany (2018, 2019).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <!-- Additional experience items (hidden initially) -->
+            <div id="additional-experience" style="display: none;">
+
+                <div class="experience-item">
+                    <img src="https://fatimacollegemdu.org/wp-content/uploads/2022/02/FatimaCollege-Emblem.png" alt="Fatima College Logo" class="company-logo" onerror="this.style.display='none'">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Lecturer</h3>
+                            <span class="experience-duration">1999 - 2005</span>
+                        </div>
+                        <div class="experience-company">
+                            <a href="https://fatimacollegemdu.org" target="_blank" title="Visit Fatima College" class="company-link">
+                                Department of MCA, Fatima College <i class="fa-solid fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
+                            </a>
+                            <span style="font-size: 0.8rem; opacity: 0.8;">(Madurai, India)</span>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Taught BCA and MCA programs for six years.</li>
+                                <li>Completed MPhil in Computer Science specializing in Data Mining (2006).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <img src="https://sngasc.ac.in/wp-content/uploads/2024/12/sngasc-logo.png" alt="Sree Narayana Guru College Logo" class="company-logo" onerror="this.style.display='none'">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Lecturer</h3>
+                            <span class="experience-duration">Jan - May 1999</span>
+                        </div>
+                        <div class="experience-company">
+                            <a href="https://sngasc.ac.in" target="_blank" title="Visit SNG College" class="company-link">
+                                Department of Computer Science, Sree Narayana Guru College <i class="fa-solid fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
+                            </a>
+                            <span style="font-size: 0.8rem; opacity: 0.8;">(Coimbatore, India)</span>
+                        </div>
+                        <div class="experience-description">
+                            <ul>
+                                <li>Taught BSc and MSc Computer Science programs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See more icon button -->
+            <div class="see-more-container">
+                <button id="see-more-experience" class="see-more-icon-btn" onclick="toggleExperience()" title="See more Experience">
+                    <span>See more</span><i id="see-more-experience-icon" class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Research Projects</h2>
+            <!-- Initial 2 projects -->
+            <div class="project-grid" id="initial-projects">
+                <div class="project-card">
+                    <h3>Healthcare Analytics System</h3>
+                    <p>Sustainable healthcare analytics for community well-being</p>
+                    <div class="tag-container">
+                        <span class="tag">Healthcare Analytics</span>
+                        <span class="tag">Digital Health</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                    <a href="#" class="project-link see-more" title="Show Details" onclick="toggleDetails('healthcare-details')"><i class="fas fa-info-circle"></i> Details</a>
+                    <div id="healthcare-details" class="project-details" style="display: none; margin-top: 10px; font-size: 0.75rem; color: #888888;">
+                        Developing a sustainable healthcare analytics system that enhances community well-being and supports the growth of the digital health mission ecosystem. This initiative aligns with national digital health goals and leverages advanced analytics to improve healthcare delivery.
+                    </div>
+                    <span class="status-indicator" title="Ongoing" style="color: #FF9800;"><i class="fas fa-spinner fa-pulse"></i></span>
+                </div>
+                <div class="project-card">
+                    <h3>Skill-Demand Gap Prediction</h3>
+                    <p>Major Research Project (2019-2023)</p>
+                    <div class="tag-container">
+                        <span class="tag">Data Science</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Higher Education</span>
+                        <span class="tag">Predictive Analytics</span>
+                    </div>
+                    <a href="#" class="project-link see-more" title="Show Details" onclick="toggleDetails('skill-gap-details')"><i class="fas fa-info-circle"></i> Details</a>
+                    <div id="skill-gap-details" class="project-details" style="display: none; margin-top: 10px; font-size: 0.75rem; color: #888888;">
+                        Principal Investigator for a major research project funded with Rs. 16,29,000. The project developed prediction strategies to identify and fill the skill-demand gap in data science and machine learning within higher education institutions. Co-investigator: Dr Lakshmi Shankar Iyer.
+                    </div>
+                    <span class="status-indicator completed" title="Completed"><i class="fas fa-check-circle" style="color: #4CAF50;"></i></span>
+                </div>
+            </div>
+
+            <!-- Additional projects (hidden initially) -->
+            <div class="project-grid" id="additional-projects" style="display: none;">
+                <div class="project-card">
+                    <h3>Cognitive Neuroscience Research</h3>
+                    <p>Neural mechanisms and mindfulness impact study</p>
+                    <div class="tag-container">
+                        <span class="tag">Cognitive Neuroscience</span>
+                        <span class="tag">Brain Behavior</span>
+                        <span class="tag">Mindfulness</span>
+                        <span class="tag">Mental Well-being</span>
+                    </div>
+                    <a href="#" class="project-link see-more" title="Show Details" onclick="toggleDetails('cognitive-details')"><i class="fas fa-info-circle"></i> Details</a>
+                    <div id="cognitive-details" class="project-details" style="display: none; margin-top: 10px; font-size: 0.75rem; color: #888888;">
+                        Current research exploration investigating the neural mechanisms of brain behavior through cognitive neuroscience to understand the impact of mindfulness on cognitive function and mental well-being. This interdisciplinary research bridges neuroscience, psychology, and data analytics.
+                    </div>
+                    <span class="status-indicator" title="Ongoing" style="color: #FF9800;"><i class="fas fa-spinner fa-pulse"></i></span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Efficient Data Mining for Medical Data</h3>
+                    <p>PhD Thesis Research</p>
+                    <div class="tag-container">
+                        <span class="tag">Data Mining</span>
+                        <span class="tag">Medical Data</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                    <a href="#" class="project-link see-more" title="Show Details" onclick="toggleDetails('phd-details')"><i class="fas fa-info-circle"></i> Details</a>
+                    <div id="phd-details" class="project-details" style="display: none; margin-top: 10px; font-size: 0.75rem; color: #888888;">
+                        PhD thesis focusing on developing efficient data mining techniques specifically designed for medical data analysis. The research contributed novel algorithms and methodologies for handling large-scale medical datasets, improving diagnosis and prognosis prediction accuracy.
+                    </div>
+                    <span class="status-indicator completed" title="Completed"><i class="fas fa-check-circle" style="color: #4CAF50;"></i></span>
+                </div>
+                
+                <div class="project-card">
+                    <h3>FP-Trees vs Compressed Trees</h3>
+                    <p>MPhil Dissertation Research</p>
+                    <div class="tag-container">
+                        <span class="tag">Data Mining</span>
+                        <span class="tag">FP-Trees</span>
+                        <span class="tag">Frequent Itemset Mining</span>
+                    </div>
+                    <a href="#" class="project-link see-more" title="Show Details" onclick="toggleDetails('mphil-details')"><i class="fas fa-info-circle"></i> Details</a>
+                    <div id="mphil-details" class="project-details" style="display: none; margin-top: 10px; font-size: 0.75rem; color: #888888;">
+                        MPhil dissertation conducting a comprehensive comparative study on the efficiency of FP-Trees and Compressed Trees for frequent itemset mining. The research analyzed performance metrics, scalability, and applicability of different tree structures in large-scale data mining applications.
+                    </div>
+                    <span class="status-indicator completed" title="Completed"><i class="fas fa-check-circle" style="color: #4CAF50;"></i></span>
+                </div>
+
+                <div class="project-card">
+                    <h3>OpenStack Framework Innovation</h3>
+                    <p>OSAUNI Framework Patent</p>
+                    <div class="tag-container">
+                        <span class="tag">Cloud Computing</span>
+                        <span class="tag">OpenStack</span>
+                        <span class="tag">University Infrastructure</span>
+                    </div>
+                    <a href="#" class="project-link see-more" title="Show Details" onclick="toggleDetails('patent-details')"><i class="fas fa-info-circle"></i> Details</a>
+                    <div id="patent-details" class="project-details" style="display: none; margin-top: 10px; font-size: 0.75rem; color: #888888;">
+                        Co-developed "OSAUNI - An Innovative Framework for OpenStack Architecture in University" with L. Sankaran and B. Suleiman. Indian patent published (Publication No. 202441002429, DOI: 02-Feb-2024). The framework provides a novel approach to implementing cloud infrastructure in educational institutions.
+                    </div>
+                    <span class="status-indicator completed" title="Completed"><i class="fas fa-check-circle" style="color: #4CAF50;"></i></span>
+                </div>
+
+            </div>
+
+            <!-- See more icon button -->
+            <div class="see-more-container">
+                <button id="see-more-projects" class="see-more-icon-btn" onclick="toggleProjects()" title="See more Projects">
+                    <span>See more</span><i id="see-more-icon" class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="publications">
+            <h2>Publications</h2>
+            
+            <!-- Initial 2 Publications -->
+            <div id="initial-publications">
+                <!-- Publication 1 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Efficient Mitosis Segmentation and Detection in Breast Cancer Histopathological Images Using YOLOv5 Model</h3>
+                        <div class="tag-container">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">YOLOv5</span>
+                            <span class="tag">Medical Imaging</span>
+                            <span class="tag">Mitosis Detection</span>
+                            <span class="tag">JAIT 2024</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> Jithy Lijo, J. S. Saleema<br><strong>Published:</strong> Journal of Advances in Information Technology 15.10 (2024), October 23, 2024<br><strong>DOI:</strong> 10.12720/jait.15.10.1184-1192<br>Advanced YOLOv5-based model for efficient detection and segmentation of mitotic cells in breast cancer histopathological images.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Analysis of an Existing Method for Detecting Adversarial Attacks on Deep Neural Networks</h3>
+                        <div class="tag-container">
+                            <span class="tag">Adversarial Attacks</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">Lecture Notes 2024</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> M. Lapina, G. Dudun, D. Kotlyarov, N. Rjevskaya, S. J. Subramanian<br><strong>Published:</strong> Lecture Notes in Networks and Systems, pp. 316–329, 2024<br><strong>DOI:</strong> 10.1007/978-3-031-64010-0_29<br>Comprehensive analysis of detection methods for adversarial attacks targeting deep neural networks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Publications (hidden initially) -->
+            <div id="additional-publications" style="display: none;">
+                <!-- Publication 3 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">LP Norm Regularized Deep CNN Classifier Based on Biwolf Optimization for Mitosis Detection</h3>
+                        <div class="tag-container">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Mitosis Detection</span>
+                            <span class="tag">IJIT 2024</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. Lijo, J. S. Saleema<br><strong>Published:</strong> International Journal of Information Technology, June 2024<br>Novel deep CNN classifier utilizing LP norm regularization and Biwolf optimization for accurate mitosis detection in histopathology images.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 4 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Analysis of U-Net and Modified VGG16 Technique for Mitosis Identification in Histopathology Images</h3>
+                        <div class="tag-container">
+                            <span class="tag">U-Net</span>
+                            <span class="tag">VGG16</span>
+                            <span class="tag">Medical Imaging</span>
+                            <span class="tag">Conference 2024</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. Lijo, J. S. Saleema<br><strong>Published:</strong> International Conference on Wireless Communications, Signal Processing and Networking, 2024<br>Comparative analysis of U-Net and Modified VGG16 architectures for mitosis identification in histopathological images.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 5 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Policies and Metrics for Schedulers in Cloud Data-Centers Using CloudSim Simulator</h3>
+                        <div class="tag-container">
+                            <span class="tag">Cloud Computing</span>
+                            <span class="tag">CloudSim</span>
+                            <span class="tag">Scheduling</span>
+                            <span class="tag">IJDSA 2023</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> L. Sankaran, J. S. Saleema, B. Suleiman<br><strong>Published:</strong> International Journal of Data Science and Analytics, pp. 117-123, 2023<br>Comprehensive study on scheduling policies and performance metrics for cloud data centers using CloudSim simulation framework.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 6 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Machine Learning Techniques for Automated Nuclear Atypia Detection in Histopathology Images: A Review</h3>
+                        <div class="tag-container">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Nuclear Atypia</span>
+                            <span class="tag">Medical Imaging</span>
+                            <span class="tag">Review Paper 2023</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. Varghese, J. S. Saleema<br><strong>Published:</strong> Lecture Notes in Networks and Systems, vol. 563, pp. 717–740, 2023<br>Comprehensive review of machine learning approaches for automated detection of nuclear atypia in histopathology images.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 7 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Analysis of Workloads for Cloud Services</h3>
+                        <div class="tag-container">
+                            <span class="tag">Cloud Computing</span>
+                            <span class="tag">Workload Analysis</span>
+                            <span class="tag">Big Data</span>
+                            <span class="tag">IEEE ACIS 2022</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> L. Sankaran, J. S. Saleema, B. Suleiman<br><strong>Published:</strong> IEEE/ACIS 7th International Conference on Big Data, Cloud Computing, and Data Science, pp. 117–123, 2022<br>In-depth analysis of workload patterns and characteristics for cloud service optimization.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 8 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Review on Segmentation of Facial Bone Surface from Craniofacial CT Images</h3>
+                        <div class="tag-container">
+                            <span class="tag">Medical Imaging</span>
+                            <span class="tag">CT Imaging</span>
+                            <span class="tag">Segmentation</span>
+                            <span class="tag">Review 2022</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. Varghese, J. S. Saleema<br><strong>Published:</strong> Lecture Notes on Data Engineering and Communications Technologies, vol. 117, pp. 717–738, 2022<br>Comprehensive review of segmentation techniques for extracting facial bone structures from craniofacial CT scans.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 9 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">CloudSim Exploration: A Knowledge Framework for Cloud Computing Researchers</h3>
+                        <div class="tag-container">
+                            <span class="tag">Cloud Computing</span>
+                            <span class="tag">CloudSim</span>
+                            <span class="tag">Simulation</span>
+                            <span class="tag">Book Chapter 2021</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> L. Sankaran, J. S. Saleema<br><strong>Published:</strong> Lecture Notes in Networks and Systems, vol. 187, pp. 107–122, 2021<br>Comprehensive knowledge framework guide for cloud computing researchers utilizing CloudSim simulation toolkit.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 10 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Long Memory Investigation During Demonetization in India</h3>
+                        <div class="tag-container">
+                            <span class="tag">Financial Analytics</span>
+                            <span class="tag">Time Series</span>
+                            <span class="tag">Economic Impact</span>
+                            <span class="tag">IMFI 2020</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> B. Ghosh, J. S. Saleema, A. Oak, K. S. Manu, R. Sangeetha<br><strong>Published:</strong> Investment Management and Financial Innovations, vol. 17, no. 2, pp. 297–307, 2020<br>Statistical analysis investigating long memory effects in Indian financial markets during the 2016 demonetization period.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 11 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Smart Songs Selection in Playlists Using Parallel K-Means Clustering</h3>
+                        <div class="tag-container">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">K-Means</span>
+                            <span class="tag">Music Recommendation</span>
+                            <span class="tag">IJCIET 2018</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> P. Manoj, J. S. Saleema<br><strong>Published:</strong> International Journal of Civil Engineering and Technology, vol. 9, no. 3, pp. 778–788, 2018<br>Intelligent playlist generation system using parallel k-means clustering for personalized music recommendations.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 12 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Cancer Prognosis Prediction Using Balanced Stratified Sampling</h3>
+                        <div class="tag-container">
+                            <span class="tag">Cancer Prognosis</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Medical Data Mining</span>
+                            <span class="tag">IJSCAI 2014</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. S. Saleema, N. Bhagawathi, S. Monica, P. D. Shenoy, K. R. Venugopal, L. M. Patnaik<br><strong>Published:</strong> International Journal on Soft Computing, Artificial Intelligence and Applications (IJSCAI), vol.3, no. 1, pp 9-18, 2014<br>Novel approach using balanced stratified sampling techniques for improved cancer prognosis prediction accuracy.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 13 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Cancer Prognosis Prediction Model Using Data Mining Techniques</h3>
+                        <div class="tag-container">
+                            <span class="tag">Data Mining</span>
+                            <span class="tag">Cancer Prognosis</span>
+                            <span class="tag">Predictive Modeling</span>
+                            <span class="tag">DMKE 2014</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. S. Saleema, et al<br><strong>Published:</strong> Data Mining and Knowledge Engineering, vol. 6, no. 1, pp. 21-29, 2014<br>Comprehensive prediction model leveraging data mining techniques for cancer prognosis assessment.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 14 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">Prominent Label Identification and Multi-Label Classification for Cancer Prognosis Prediction</h3>
+                        <div class="tag-container">
+                            <span class="tag">Multi-Label Classification</span>
+                            <span class="tag">Cancer Prognosis</span>
+                            <span class="tag">Feature Selection</span>
+                            <span class="tag">TENCON 2012</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. S. Saleema, B. Sairam, S. D. Naveen, K. Yuvaraj, L. M. Patnaik<br><strong>Published:</strong> TENCON 2012 IEEE Region 10 Conference, Cebu, Philippines, pp. 1-6, 2012<br>Novel approach for identifying prominent labels and multi-label classification in cancer prognosis prediction systems.</p>
+                    </div>
+                </div>
+
+                <!-- Publication 15 -->
+                <div class="publication-container">
+                    <div class="publication-card">
+                        <h3 class="publication-title">PCA Algorithms for High Dimensional Data Using Neural Networks</h3>
+                        <div class="tag-container">
+                            <span class="tag">PCA</span>
+                            <span class="tag">Neural Networks</span>
+                            <span class="tag">Dimensionality Reduction</span>
+                            <span class="tag">ICIP 2010</span>
+                        </div>
+                        <p class="publication-description"><strong>Authors:</strong> J. S. Saleema, Deepa Shenoy P., Venugopal K.R., Patnaik L.M.<br><strong>Published:</strong> Proceedings of International Conference on Information Processing, 2010<br>Advanced PCA algorithms utilizing neural network architectures for efficient dimensionality reduction in high-dimensional datasets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See more/less button for publications -->
+            <div class="see-more-container">
+                <button id="see-more-publications" class="see-more-icon-btn" onclick="togglePublications()" title="See more Publications">
+                    <span>See more</span><i id="see-more-publications-icon" class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <!-- Additional Publications Note -->
+            <div style="margin-top: 20px; padding: 15px; background: rgba(76, 175, 80, 0.1); border-left: 4px solid #4CAF50; border-radius: 4px;">
+                <p style="margin: 0; font-size: 0.9rem; color: var(--text-color);">
+                    <strong>Research Impact:</strong> 15+ peer-reviewed publications in reputed international journals and conferences | 1 Published Indian Patent (OSAUNI Framework)
+                </p>
+            </div>
+        </section>
+
+        
+        <!-- <section class="apprenticeships">
+            <div id="apprenticeships" class="python-notebook-container">
+                <div class="notebook-header">
+                    <div class="notebook-buttons">
+                        <span class="notebook-button close"></span>
+                        <span class="notebook-button minimize"></span>
+                        <span class="notebook-button maximize"></span>
+                    </div>
+                    <div class="notebook-title">apprenticeship.ipynb</div>
+                </div>
+                <div class="notebook-content">
+                    <!-- Single cell that loads and displays apprenticeship data -->
+                    <!-- <div class="cell code-cell">
+                        <div class="cell-input">
+                            <span class="cell-prompt">In [1]:</span>
+                            <span class="python-code"><span class="comment"># Load apprenticeship data</span>
+<span class="keyword">with</span> <span class="builtin">open</span>(<span class="string">'apprenticeships.json'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> f:
+    apprenticeships = json.<span class="builtin">load</span>(f)</span>
+                            <button class="run-button" onclick="executeCell(this)">Run</button>
+                        </div>
+                        <div class="cell-output" style="display: none;">
+                            <div class="output-text">
+                                <div style="font-family: 'Consolas', 'Monaco', monospace; padding: 10px;">
+                                  <h2 style="margin-top: 0; color: var(--text-color);">Apprenticeships</h2>
+                                  <pre style="margin-bottom: 20px; padding: 15px; border-radius: 8px; background: rgba(141, 73, 182, 0.1); border-left: 4px solid rgba(141, 73, 182, 0.5); overflow-x: auto; white-space: pre-wrap;"><span style="color: var(--accent-color); font-weight: bold;">Organization:</span> PricewaterhouseCoopers (PwC)
+<span style="color: var(--accent-color); font-weight: bold;">Duration:</span> February 2025 - Present
+<span style="color: var(--accent-color); font-weight: bold;">Role:</span> Salesforce Launchpad Trainee</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-badge">
+                    <div class="achievement-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="achievement-header">
+                        <div class="achievement-title-container">
+                            <h3 class="achievement-title">International Visiting Faculty</h3>
+                            <span class="achievement-date">2018, 2019</span>
+                        </div>
+                    </div>
+                    <div class="achievement-description">
+                        Invited as Visiting Faculty at University of Applied Sciences, Würzburg-Schweinfurt, Germany. Conducted advanced seminars on data science, machine learning, and business intelligence for international students.
+                    </div>
+                </div>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="achievement-header">
+                        <div class="achievement-title-container">
+                            <h3 class="achievement-title">Published Indian Patent</h3>
+                            <span class="achievement-date">Feb 2024</span>
+                        </div>
+                    </div>
+                    <div class="achievement-description">
+                        Co-inventor of "OSAUNI - An Innovative Framework for OpenStack Architecture in University" with L. Sankaran and B. Suleiman. Patent Publication No. 202441002429. Framework addresses cloud infrastructure needs in higher education institutions.
+                    </div>
+                </div>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-header">
+                        <div class="achievement-title-container">
+                            <h3 class="achievement-title">Principal Investigator - Major Research Grant</h3>
+                            <span class="achievement-date">2019-2023</span>
+                        </div>
+                    </div>
+                    <div class="achievement-description">
+                        Led a major research project funded with Rs. 16,29,000 on "Prediction strategies to fill skill-demand-gap in data science and machine learning" addressing critical needs in higher education skill development.
+                    </div>
+                </div>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="achievement-header">
+                        <div class="achievement-title-container">
+                            <h3 class="achievement-title">Resource Person & Keynote Speaker</h3>
+                            <span class="achievement-date">2015-Present</span>
+                        </div>
+                    </div>
+                    <div class="achievement-description">
+                        Delivered 15+ invited talks, keynote addresses, and expert sessions at national and international conferences on data science, machine learning, and healthcare analytics. Sessions include FDPs, workshops, and academic seminars across India.
+                    </div>
+                </div>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="achievement-header">
+                        <div class="achievement-title-container">
+                            <h3 class="achievement-title">Conference Session Chair</h3>
+                            <span class="achievement-date">Multiple Events</span>
+                        </div>
+                    </div>
+                    <div class="achievement-description">
+                        Served as Session Chair at prestigious international conferences including ICCC, ICCCIS, and other leading academic forums. Facilitated scholarly discussions and moderated technical sessions in data science and AI domains.
+                    </div>
+                </div>
+
+                <div class="achievement-badge">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-header">
+                        <div class="achievement-title-container">
+                            <h3 class="achievement-title">Head of Department</h3>
+                            <span class="achievement-date">2022-Present</span>
+                        </div>
+                    </div>
+                    <div class="achievement-description">
+                        Currently serving as Associate Professor & Head of Department, Statistics and Data Science at CHRIST (Deemed to be University), Bangalore. Leading academic excellence and research initiatives in the department.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dr. J S Saleema",
+        "url": "",
+        "image": "https://kp.christuniversity.in/KnowledgePro/images/EmployeePhotos/E164.jpg",
+        "sameAs": [
+            "https://christuniversity.in/statistics-and-data-science/faculty-details/MTY0/OTEy"
+        ],
+        "jobTitle": "Associate Professor & Head of Department",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "CHRIST (Deemed to be University)"
+        },
+        "description": "Associate Professor & Head, Department of Statistics and Data Science at CHRIST University, Bangalore. Specializing in Data Mining, Machine Learning, Healthcare Analytics, and Cognitive Neuroscience. 25 years of teaching experience with 15+ peer-reviewed publications.",
+        "award": [
+            "International Visiting Faculty, University of Applied Sciences, Germany (2018, 2019)",
+            "Published Indian Patent - OSAUNI Framework (2024)",
+            "Principal Investigator - Major Research Grant (Rs. 16,29,000)",
+            "15+ Resource Person Talks and Keynote Addresses",
+            "Conference Session Chair at International Forums"
+        ]
+    }
+    </script>
+
+    <script>
+        // Set initial theme to light mode by default
+        document.body.dataset.theme = 'light';
+        document.querySelector('.theme-toggle i').className = 'fas fa-moon';
+
+        function toggleTheme() {
+            const isDark = document.body.dataset.theme === 'dark';
+            document.body.dataset.theme = isDark ? 'light' : 'dark';
+
+            // Animate icon transition
+            const icon = document.querySelector('.theme-toggle i');
+            icon.style.transform = 'rotate(360deg)';
+
+            setTimeout(() => {
+                icon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+                icon.style.transform = 'rotate(0)';
+            }, 150);
+        }
+
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            const card = details.closest('.project-card');
+
+            if (details.style.display === "none" || !details.style.display) {
+                // Close all other details first
+                document.querySelectorAll('.project-details').forEach(detail => {
+                    if (detail.id !== id && detail.style.display === "block") {
+                        detail.style.display = "none";
+                        const parentCard = detail.closest('.project-card');
+                        if (parentCard) {
+                            parentCard.style.zIndex = "1";
+                        }
+                    }
+                });
+
+                // Open this detail
+                details.style.display = "block";
+                if (card) {
+                    card.style.zIndex = "10";
+                    card.style.position = "relative";
+                }
+            } else {
+                details.style.display = "none";
+                if (card) {
+                    card.style.zIndex = "1";
+                }
+            }
+            event.preventDefault();
+        }
+
+        function toggleAboutSection() {
+            const moreContent = document.getElementById('about-more-content');
+            const btn = document.getElementById('about-read-more-btn');
+            
+            if (moreContent.style.display === 'none') {
+                moreContent.style.display = 'block';
+                btn.innerHTML = '<i class="fas fa-chevron-up"></i> Show Less';
+            } else {
+                moreContent.style.display = 'none';
+                btn.innerHTML = '<i class="fas fa-chevron-down"></i> Read More About Me';
+            }
+        }
+
+        function toggleProjects() {
+            const additionalProjects = document.getElementById('additional-projects');
+            const seeMoreIcon = document.getElementById('see-more-icon');
+            const seeMoreBtn = document.getElementById('see-more-projects');
+
+            if (additionalProjects.style.display === 'none') {
+                // Opening animation
+                additionalProjects.style.display = 'grid';
+                seeMoreIcon.className = 'fas fa-chevron-up';
+                seeMoreBtn.querySelector('span').textContent = 'See less';
+            } else {
+                // Closing animation
+                additionalProjects.style.opacity = '0';
+                additionalProjects.style.transform = 'translateY(-10px)';
+                seeMoreIcon.className = 'fas fa-chevron-down';
+                seeMoreBtn.querySelector('span').textContent = 'See more';
+
+                setTimeout(() => {
+                    additionalProjects.style.display = 'none';
+                    additionalProjects.style.opacity = '';
+                    additionalProjects.style.transform = '';
+                }, 180);
+            }
+        }
+
+        function togglePublications() {
+            const additionalPublications = document.getElementById('additional-publications');
+            const seeMoreIcon = document.getElementById('see-more-publications-icon');
+            const seeMoreBtn = document.getElementById('see-more-publications');
+
+            if (additionalPublications.style.display === 'none') {
+                // Opening animation
+                additionalPublications.style.display = 'block';
+                seeMoreIcon.className = 'fas fa-chevron-up';
+                seeMoreBtn.querySelector('span').textContent = 'See less';
+            } else {
+                // Closing animation
+                additionalPublications.style.opacity = '0';
+                additionalPublications.style.transform = 'translateY(-10px)';
+                seeMoreIcon.className = 'fas fa-chevron-down';
+                seeMoreBtn.querySelector('span').textContent = 'See more';
+
+                setTimeout(() => {
+                    additionalPublications.style.display = 'none';
+                    additionalPublications.style.opacity = '';
+                    additionalPublications.style.transform = '';
+                }, 180);
+            }
+        }
+
+        function toggleContributions() {
+            const additionalContributions = document.getElementById('additional-contributions');
+            const seeMoreIcon = document.getElementById('see-more-contributions-icon');
+            const seeMoreBtn = document.getElementById('see-more-contributions');
+
+            if (additionalContributions.style.display === 'none') {
+                // Opening animation
+                additionalContributions.style.display = 'grid';
+                seeMoreIcon.className = 'fas fa-chevron-up';
+                seeMoreBtn.querySelector('span').textContent = 'See less';
+            } else {
+                // Closing animation
+                additionalContributions.style.opacity = '0';
+                additionalContributions.style.transform = 'translateY(-10px)';
+                seeMoreIcon.className = 'fas fa-chevron-down';
+                seeMoreBtn.querySelector('span').textContent = 'See more';
+
+                setTimeout(() => {
+                    additionalContributions.style.display = 'none';
+                    additionalContributions.style.opacity = '';
+                    additionalContributions.style.transform = '';
+                }, 180);
+            }
+        }
+
+        function toggleExperience() {
+            const additionalExperience = document.getElementById('additional-experience');
+            const seeMoreIcon = document.getElementById('see-more-experience-icon');
+            const seeMoreBtn = document.getElementById('see-more-experience');
+
+            if (additionalExperience.style.display === 'none') {
+                // Opening animation
+                additionalExperience.style.display = 'block';
+                seeMoreIcon.className = 'fas fa-chevron-up';
+                seeMoreBtn.querySelector('span').textContent = 'See less';
+            } else {
+                // Closing animation
+                additionalExperience.style.opacity = '0';
+                additionalExperience.style.transform = 'translateY(-10px)';
+                seeMoreIcon.className = 'fas fa-chevron-down';
+                seeMoreBtn.querySelector('span').textContent = 'See more';
+
+                setTimeout(() => {
+                    additionalExperience.style.display = 'none';
+                    additionalExperience.style.opacity = '';
+                    additionalExperience.style.transform = '';
+                }, 180);
+            }
+        }
+
+        // Binary-to-name animation with neural network background
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to detect mobile devices
+            function isMobileDevice() {
+                return (window.innerWidth <= 768) || 
+                       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+            
+            const openingAnimation = document.querySelector('.opening-animation');
+            
+            // Skip animation entirely on mobile devices
+            if (isMobileDevice()) {
+                // Remove the animation element immediately
+                openingAnimation.remove();
+                return;
+            }
+            
+            // Continue with animation for desktop devices
+            // Add animation-active class to body to prevent scrolling
+            document.body.classList.add('animation-active');
+            
+            const nameText = document.querySelector('.name-text');
+            const canvas = document.getElementById('data-stream-canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Set canvas size to match window
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            // Get the original text and clear it to prepare for animation
+            const name = "J S SALEEMA";
+            nameText.textContent = '';
+            
+            // Generate random binary digit (0 or 1)
+            const randomBinary = () => Math.random() > 0.5 ? '1' : '0';
+            
+            // Draw neural network background
+            const nodes = [];
+            const connections = [];
+            const numNodes = 180; // Increased from 120 to 180 for much higher density
+            const maxConnections = 8; // Increased from 5 to 8 connections per node
+            const activationArea = 250; // Increased radius around mouse for node activation
+            let mouseX = canvas.width / 2;
+            let mouseY = canvas.height / 2;
+            
+            // Track mouse position for interactive effects
+            canvas.addEventListener('mousemove', (e) => {
+                const rect = canvas.getBoundingClientRect();
+                mouseX = e.clientX - rect.left;
+                mouseY = e.clientY - rect.top;
+            });
+            
+            // Create network nodes with additional properties
+            for (let i = 0; i < numNodes; i++) {
+                // Create clusters of nodes for more realistic network appearance
+                const clusterChance = Math.random();
+                let x, y;
+                
+                if (clusterChance > 0.7) {
+                    // Create cluster around a random point
+                    const clusterX = Math.random() * canvas.width;
+                    const clusterY = Math.random() * canvas.height;
+                    const clusterRadius = 100 + Math.random() * 150;
+                    
+                    // Position within cluster with Gaussian-like distribution (more dense toward center)
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = Math.random() * Math.random() * clusterRadius; // Squared for more center density
+                    x = clusterX + Math.cos(angle) * distance;
+                    y = clusterY + Math.sin(angle) * distance;
+                    
+                    // Keep within canvas bounds
+                    x = Math.max(0, Math.min(canvas.width, x));
+                    y = Math.max(0, Math.min(canvas.height, y));
+                } else {
+                    // Regular random distribution
+                    x = Math.random() * canvas.width;
+                    y = Math.random() * canvas.height;
+                }
+                
+                // Create node with varied properties
+                nodes.push({
+                    x: x,
+                    y: y,
+                    radius: Math.random() * 1.8 + 0.8, // More variety in node size
+                    baseRadius: Math.random() * 1.8 + 0.8,
+                    speedX: (Math.random() - 0.5) * 0.3, // Slightly slower movement for more stability
+                    speedY: (Math.random() - 0.5) * 0.3,
+                    activation: 0, // Activation level for visual effects
+                    connectionCount: 0, // Track connection count
+                    type: Math.random() > 0.85 ? 'hub' : 'regular' // Some nodes are hubs (larger, more connections)
+                });
+            }
+            
+            // Create connections between nodes (smarter algorithm)
+            for (let i = 0; i < numNodes; i++) {
+                // Sort other nodes by distance to create more realistic connections
+                const distances = [];
+                for (let j = 0; j < numNodes; j++) {
+                    if (i !== j) {
+                        const dx = nodes[i].x - nodes[j].x;
+                        const dy = nodes[i].y - nodes[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        distances.push({ index: j, distance });
+                    }
+                }
+                
+                // Connect to nearest nodes, up to maxConnections
+                distances.sort((a, b) => a.distance - b.distance);
+                
+                // Create more connections - both to nearest nodes and some random further ones
+                const nearConnectCount = Math.min(Math.floor(Math.random() * 4) + 2, distances.length); // Near connections (2-5)
+                const farConnectCount = Math.min(Math.floor(Math.random() * 3) + 1, distances.length); // Far connections (1-3)
+                
+                // Connect to nearest nodes
+                for (let k = 0; k < nearConnectCount; k++) {
+                    if (nodes[i].connectionCount < maxConnections && nodes[distances[k].index].connectionCount < maxConnections) {
+                        connections.push({ 
+                            from: i, 
+                            to: distances[k].index,
+                            opacity: 0.1 + Math.random() * 0.25, // Increased max opacity
+                            pulseSpeed: 0.01 + Math.random() * 0.03, // Varied pulse speeds
+                            pulseState: Math.random() * Math.PI * 2 // Random starting phase
+                        });
+                        nodes[i].connectionCount++;
+                        nodes[distances[k].index].connectionCount++;
+                    }
+                }
+                
+                // Add some longer, random connections (for small-world network effect)
+                const midPoint = Math.floor(distances.length / 2);
+                for (let k = 0; k < farConnectCount; k++) {
+                    const randomFarIndex = midPoint + Math.floor(Math.random() * (distances.length - midPoint));
+                    if (randomFarIndex < distances.length && 
+                        nodes[i].connectionCount < maxConnections && 
+                        nodes[distances[randomFarIndex].index].connectionCount < maxConnections) {
+                        connections.push({ 
+                            from: i, 
+                            to: distances[randomFarIndex].index,
+                            opacity: 0.05 + Math.random() * 0.15, // Lower opacity for distant connections
+                            pulseSpeed: 0.02 + Math.random() * 0.04, // Faster pulses for distant connections
+                            pulseState: Math.random() * Math.PI * 2
+                        });
+                        nodes[i].connectionCount++;
+                        nodes[distances[randomFarIndex].index].connectionCount++;
+                    }
+                }
+            }
+            
+            // Animation function for neural network
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Calculate node activation based on mouse proximity
+                nodes.forEach(node => {
+                    const dx = node.x - mouseX;
+                    const dy = node.y - mouseY;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    // Activate nodes near the mouse
+                    if (distance < activationArea) {
+                        node.activation = Math.max(node.activation, 1 - distance / activationArea);
+                    } else {
+                        // Gradually reduce activation
+                        node.activation *= 0.95;
+                    }
+                });
+                
+                // Draw connections with pulsing effect
+                connections.forEach(conn => {
+                    const fromNode = nodes[conn.from];
+                    const toNode = nodes[conn.to];
+                    
+                    // Update pulse state
+                    conn.pulseState += conn.pulseSpeed;
+                    if (conn.pulseState > Math.PI * 2) conn.pulseState -= Math.PI * 2;
+                    
+                    // Calculate connection opacity based on node activations and pulse
+                    const baseOpacity = Math.max(fromNode.activation, toNode.activation);
+                    const pulseEffect = Math.sin(conn.pulseState) * 0.2 + 0.8; // Pulse between 0.6 and 1.0
+                    const finalOpacity = Math.min(baseOpacity * 0.8 + 0.05, 1) * pulseEffect * conn.opacity;
+                    
+                    // Draw the connection with gradient for direction
+                    const gradient = ctx.createLinearGradient(fromNode.x, fromNode.y, toNode.x, toNode.y);
+                    gradient.addColorStop(0, `rgba(64, 120, 192, ${finalOpacity * 0.7})`);
+                    gradient.addColorStop(1, `rgba(64, 120, 192, ${finalOpacity * 0.5})`);
+                    
+                    ctx.beginPath();
+                    ctx.strokeStyle = gradient;
+                    ctx.lineWidth = Math.max(0.3, baseOpacity * 1.2); // Thicker lines when activated
+                    ctx.moveTo(fromNode.x, fromNode.y);
+                    ctx.lineTo(toNode.x, toNode.y);
+                    ctx.stroke();
+                });
+                
+                // Update and draw nodes
+                nodes.forEach(node => {
+                    // Update position with boundary checks
+                    node.x += node.speedX;
+                    node.y += node.speedY;
+                    
+                    if (node.x < 0 || node.x > canvas.width) node.speedX *= -1;
+                    if (node.y < 0 || node.y > canvas.height) node.speedY *= -1;
+                    
+                    // Calculate node size based on activation and type
+                    const isHub = node.type === 'hub';
+                    const baseSize = isHub ? node.baseRadius * 1.5 : node.baseRadius;
+                    const activationBoost = node.activation * (isHub ? 3 : 2);
+                    const displayRadius = baseSize + activationBoost;
+                    
+                    // Draw node with glow effect when activated
+                    if (node.activation > 0.05 || isHub) {
+                        // Draw glow - hubs always have a slight glow
+                        const glowOpacity = isHub ? Math.max(0.1, node.activation * 0.4) : node.activation * 0.3;
+                        const glowRadius = isHub ? displayRadius * 4 : displayRadius * 3;
+                        
+                        const glow = ctx.createRadialGradient(
+                            node.x, node.y, 0,
+                            node.x, node.y, glowRadius
+                        );
+                        glow.addColorStop(0, `rgba(64, 120, 192, ${glowOpacity})`);
+                        glow.addColorStop(1, 'rgba(64,  120, 192, 0)');
+                        
+                        ctx.fillStyle = glow;
+                        ctx.beginPath();
+                        ctx.arc(node.x, node.y, glowRadius, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                    
+                    // Draw the node itself with appropriate color based on type and activation
+                    let nodeOpacity = Math.min(0.2 + node.activation * 0.8, 1);
+                    if (isHub) nodeOpacity = Math.max(0.4, nodeOpacity); // Hubs are always more visible
+                    
+                    const nodeColor = isHub 
+                        ? `rgba(82, 145, 224, ${nodeOpacity})` // Brighter blue for hubs
+                        : `rgba(64, 120, 192, ${nodeOpacity})`; // Regular nodes
+                        
+                    ctx.fillStyle = nodeColor;
+                    ctx.beginPath();
+                    ctx.arc(node.x, node.y, displayRadius, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+                
+                // Continue animation
+                if (!openingAnimation.classList.contains('fade-out')) {
+                    requestAnimationFrame(animate);
+                }
+            }
+            
+            // Start background animation
+            animate();
+            
+            // Create binary characters and setup the typing and flip animations
+            let totalAnimationTime = 0;
+            
+            function randomBinarySequence() {
+                return Array(3).fill().map(() => randomBinary()).join('');
+            }
+            
+            // Create array of character elements for easier management
+            const charElements = [];
+            
+            // Set a CSS variable for character count to time the tagline animation
+            document.documentElement.style.setProperty('--char-count', name.split('').filter(c => c !== ' ').length);
+            
+            name.split('').forEach((letter, index) => {
+                // Create a container for the binary character
+                const binaryChar = document.createElement('div');
+                binaryChar.className = letter === ' ' ? 'binary-char space' : 'binary-char';
+                
+                // Create divs for binary and letter content
+                const binaryContent = document.createElement('div');
+               
+                binaryContent.className = 'char-content binary';
+                binaryContent.textContent = letter === ' ' ? '\u00A0' : '';  // Start empty for typing effect
+                
+                const letterContent = document.createElement('div');
+                letterContent.className = 'char-content letter';
+                letterContent.textContent = letter === ' ' ? '\u00A0' : letter;
+                
+                // Add content divs to binary character
+                binaryChar.appendChild(binaryContent);
+                binaryChar.appendChild(letterContent);
+                
+                // Add binary character to name text
+                nameText.appendChild(binaryChar);
+                
+                // Store reference for typing management
+                if (letter !== ' ') {
+                    charElements.push({ index, binaryContent, letterContent, letter, element: binaryChar });
+                }
+            });
+            
+            // First phase: Type all binary characters sequentially
+            function typeAllBinaryChars() {
+                let currentCharIndex = 0;
+                
+                function typeNextChar() {
+                    if (currentCharIndex >= charElements.length) {
+                        // All characters typed, start the transform sequence after a delay
+                        setTimeout(transformAllCharsSequentially, 500);
+                        return;
+                    }
+                    
+                    const { binaryContent } = charElements[currentCharIndex];
+                    
+                    // Remove cursor from previous character if it exists
+                    if (currentCharIndex > 0) {
+                        charElements[currentCharIndex - 1].binaryContent.style.borderRight = 'none';
+                    }
+                    
+                    // Add cursor to current character
+                    binaryContent.style.borderRight = '2px solid var(--accent-color)';
+
+                    // Typing effect for current character
+                    const typeInterval = setInterval(() => {
+                        binaryContent.textContent = randomBinary();
+                    }, 80);
+                    
+                    // After a short while, stop typing and move to next character
+                    setTimeout(() => {
+                        clearInterval(typeInterval);
+                        binaryContent.textContent = randomBinary(); // Final binary digit
+                        currentCharIndex++;
+                        typeNextChar();
+                    }, 150);
+                }
+                
+                // Start typing sequence
+                typeNextChar();
+            }
+            // Second phase: Transform all characters sequentially
+            function transformAllCharsSequentially() {
+                // Remove cursor from all characters
+                charElements.forEach(char => {
+                    char.binaryContent.style.borderRight = 'none';
+                });
+                
+                // Add intermediate binary scrambling before final transformation
+                function scrambleBinary(char, duration, callback) {
+                    let startTime = Date.now();
+                    const interval = setInterval(() => {
+                        char.binaryContent.textContent = randomBinary();
+                        
+                        if (Date.now() - startTime > duration) {
+                            clearInterval(interval);
+                            if (callback) callback();
+                        }
+                    }, 50); // Fast scrambling
+                }
+                
+                // Transform each character with a staggered delay
+                charElements.forEach((char, index) => {
+                    setTimeout(() => {
+                        // Start with rapid binary scrambling
+                        scrambleBinary(char, 300, () => {
+                            // Then initiate transformation
+                            char.element.classList.add('transforming');
+                            
+                            // After transformation is complete
+                            setTimeout(() => {
+                                char.element.classList.add('transformed');
+                            }, 600);
+                        });
+                    }, index * 100); // Staggered delay
+                });
+                
+                // Calculate total animation time
+                totalAnimationTime = 500 + (charElements.length * 150) + 1000;
+                
+                // Fade out the entire animation after name is revealed
+                setTimeout(() => {
+                    openingAnimation.classList.add('fade-out');
+                    setTimeout(() => {
+                        openingAnimation.remove();
+                        // Remove the animation-active class to allow scrolling again
+                        document.body.classList.remove('animation-active');
+                    }, 800);
+                }, totalAnimationTime);
+            }
+            
+            // Start the animation sequence
+            setTimeout(typeAllBinaryChars, 500);
+            
+        });
+
+        // Terminal-style skills interaction
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillTags = document.querySelectorAll('.skill-tag');
+            
+            skillTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    // Add terminal-like selection effect
+                    this.style.backgroundColor = 'rgba(var(--accent-rgb), 0.3)';
+                    this.style.transform = 'scale(1.02)';
+                    
+                    // Reset after brief moment
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                        this.style.transform = '';
+                    }, 200);
+                });
+            });
+        });
+        
+        // Function for syntax highlighting
+        function applySyntaxHighlighting(code) {
+            // We won't use this automatic highlighting anymore
+            // Since we're manually adding spans for syntax highlighting
+            return code;
+        }
+        
+        // Function to execute Jupyter notebook-style cells
+        function executeCell(button) {
+            // Find the cell containing the button
+            const cell = button.closest('.cell');
+            const output = cell.querySelector('.cell-output');
+            
+            // Initially hide the output
+            if (output.style.display === 'none') {
+                // Add executing class to show the cell is running
+                cell.classList.add('executing');
+                
+                // Simulate execution with typing animation
+                button.disabled = true;
+                button.textContent = 'Running...';
+                
+                // Add a subtle pulsing effect to the cell
+                cell.style.boxShadow = '0 0 0 1px rgba(66, 133, 244, 0.3)';
+                
+                // Add typing animation at the end of the code
+                const pythonCode = cell.querySelector('.python-code');
+                const cursor = document.createElement('span');
+                cursor.className = 'cursor-element';
+                pythonCode.appendChild(cursor);
+                
+                // Simulate code execution with a blinking cursor effect
+                const blinkInterval = setInterval(() => {
+                    cursor.classList.toggle('blink');
+                }, 400);
+                
+                // Show a loading animation for JSON processing
+                const loadingMessages = [
+                    "Loading apprenticeships.json...",
+                    "Parsing JSON data...",
+                    "Formatting output...",
+                ];
+                
+                let messageIndex = 0;
+                const loadingInterval = setInterval(() => {
+                    if (messageIndex < loadingMessages.length) {
+                        const tempOutput = document.createElement('div');
+                        tempOutput.className = 'temp-output';
+                        tempOutput.textContent = loadingMessages[messageIndex];
+                        
+                        // Remove previous temp output if exists
+                        const prevTemp = cell.querySelector('.temp-output');
+                        if (prevTemp) {
+                            prevTemp.remove();
+                        }
+                        
+                        // Add new temp output before the main output
+                        output.parentNode.insertBefore(tempOutput, output);
+                        
+                        messageIndex++;
+                    } else {
+                        clearInterval(loadingInterval);
+                        // Remove the temp output
+                        const prevTemp = cell.querySelector('.temp-output');
+                        if (prevTemp) {
+                            prevTemp.remove();
+                        }
+                    }
+                }, 500);
+                
+                // Show the cell execution animation with realistic timing
+                setTimeout(() => {
+                    clearInterval(blinkInterval);
+                    
+                    // Remove the cursor
+                    const cursorElement = cell.querySelector('.cursor-element');
+                    if (cursorElement) {
+                        cursorElement.remove();
+                    }
+                    
+                    // Remove executing class
+                    cell.classList.remove('executing');
+                    
+                    // Show the output with a fade-in animation
+                    output.style.display = 'block';
+                    
+                    // Change button state
+                    setTimeout(() => {
+                        button.textContent = 'Run';
+                        button.disabled = false;
+                        cell.style.boxShadow = '';
+                    }, 300);
+                    
+                }, 2200); // Longer delay for more realistic JSON processing
+            } else {
+                // Toggle output visibility if it's already visible
+                output.style.display = 'none';
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add this to your existing DOMContentLoaded code block if not already there
+            const notebookContainer = document.querySelector('.python-notebook-container');
+            
+            if (notebookContainer) {
+                // We're now using pre-highlighted code with spans
+                // No need to apply syntax highlighting at runtime
+                
+                // Add custom styles for cursor blinking
+                const style = document.createElement('style');
+                style.textContent = `
+                    .cursor-element {
+                        display: inline-block;
+                        width: 2px;
+                        height: 1.2em;
+                        background-color: #4285f4;
+                        vertical-align: middle;
+                        animation: blink 1s infinite;
+                        margin-left: 2px;
+                    }
+                    
+                    @keyframes blink {
+                        0%, 100% { opacity: 1; }
+                        50% { opacity: 0; }
+                    }
+                    
+                    .cell.executing {
+                        background-color: rgba(66, 133, 244, 0.05);
+                    }
+                    
+                    .temp-output {
+                        padding: 0.75rem 1rem 0.75rem 6.25rem;
+                        background-color: #f0f0f0;
+                        color: #666;
+                        font-family: 'JetBrains Mono', monospace;
+                        font-size: 0.85rem;
+                        font-style: italic;
+                        position: relative;
+                        animation: fadeInOut 1s infinite alternate;
+                    }
+                    
+                    [data-theme="dark"] .temp-output {
+                        background-color: #2a2a2a;
+                        color: #aaa;
+                    }
+                    
+                    @keyframes fadeInOut {
+                        from { opacity: 0.7; }
+                        to { opacity: 1; }
+                    }
+                    
+                    .temp-output::before {
+                        content: "...";
+                        position: absolute;
+                        left: 1rem;
+                        font-weight: bold;
+                        color: #666;
+                    }
+                    
+                    [data-theme="dark"] .temp-output::before {
+                        color: #aaa;
+                    }
+                    
+                    /* Make the output look better */
+                    .output-text {
+                        color: #333;
+                    }
+                    
+                    [data-theme="dark"] .output-text {
+                        color: #eee;
+                    }
+                    
+                    .output-text h2 {
+                        margin-top: 0 !important;
+                    }
+                    
+                    /* Make the output text responsive */
+                    @media (max-width: 768px) {
+                        .cell-output {
+                            padding-left: 1rem !important;
+                        }
+                        
+                        .cell-output::before {
+                            display: none;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        });
+    </script>
+</body>
+</html>
